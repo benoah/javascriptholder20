@@ -1,0 +1,21 @@
+.btn-secondary {
+    background-color: var(--grey);
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: var(--grey);
+    border: none;
+    box-shadow: none;
+}
+
+.btn-secondary:active:focus {
+    box-shadow: none;
+}
+
+.btn-secondary.active {
+    background-color: var(--primary-colour) !important;
+    border-color: var(--primary-colour) !important;
+}
