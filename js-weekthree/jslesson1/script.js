@@ -358,8 +358,85 @@ If you ever find yourself trying to write a nested ternary operation,
 function multiply(a, b) {
     return a * b;
 }
+// convert
+
+const multiply = (a, b)=> console.log (a * b);
+
+(a, b) => console.log(a*b);
+
+// lesson etc
+const multiply = (a, b) => a * b;
 
 
+// question 2
+function() {
+    console.log("Hello");
+}
 
+// convert
+
+() => console.log("Hello");
+
+
+//Question 3
+// Add a method to the object below that returns its colour property:
+
+const frog = {
+    colour: "green"
+}
+// convert 
+
+const frog = {
+    colour: "green", // propertoe
+    getColour: function(){
+        return this.colour;
+    }
+}
+
+// question 4
+
+// Create an IIFE that logs the current date and time.
+
+(function(){
+    console.log(new Date());
+})();
+
+// question 5
+// convert the if statement below to use a ternary operator:
+
+const animal = "mongoose";
+
+let difficultToSpell = false;
+
+if(animal === "hippopotamus") {
+    difficultToSpell = true;
+}
+
+//---convert----
+const animal = "mongoose";
+
+const difficultToSpell = animal === "mongoose" ? true : false; 
+
+// The part after the ? is code that will run if the conditional statement is true.
+
+// The part after the : is code that will run if the conditional statement is not true.
+
+// Ternary operations require fewer lines of code than a normal if-else statement, 
+// but it's highly debatable whether the code is easier to read.
+
+// Readable code is always preferable to succinct code. The ternary operator is introduced here because it is popular among JavaScript developers, but often it's better to use an if/else.
+
+//If you ever find yourself trying to write a nested ternary operation,
+// don't do it. Be kind to yourself and other people who may read your work
+// and write easy to follow code.
+
+
+// Question 5
+const animal = "mongoose";
+
+const difficultToSpell = animal === "hippopotamus" ? true : false;
+
+// you can wrap the condition in brackets if it's more readable to you
+const difficultToSpell = (animal === "hippopotamus") ? true : false;
 
 
